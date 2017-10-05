@@ -1,0 +1,17 @@
+#!/bin/sh
+
+rm csh-out shell-out
+echo "TestSource: source forSource.cc"
+echo "source forSource.cc" > shell-in
+
+/bin/sh < shell-in > csh-out 
+../shell < shell-in > shell-out
+
+diff shell-out csh-out
+if [$? -ne 0]
+then
+	echo "TestSource failed"
+	exit -1
+fi
+echo Testsource OK
+exit 0

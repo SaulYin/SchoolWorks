@@ -1,0 +1,18 @@
+1. Features that works:
+a. ctrl-c
+b. exit
+c. working builtins: printenv,setenv,unsetenv,cd
+d. wildcarding
+e. zombie elimination
+f. quotes
+g. escaping
+h. working environment variable expansion:${var},${$}
+i. tilde expansion
+j. edit mode :NOTE,please use ctrl-H when deleting, since this is what been specified on the handout and what I have implemented 
+k. history
+
+2. Features not working:
+a. jobs
+b. source
+
+3. No extra feature was implemented 
